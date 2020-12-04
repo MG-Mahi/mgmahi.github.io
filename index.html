@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>MGMAHI | DEVELOPER</title>
+  </head>
+  <body>
+    <section class="header">
+        <div class="logo">
+         <img src="Imgs/mainlogo.png" alt="logo" />   
+        </div>
+        <div class="about">
+          <h1>CODE<br>SLEEP<br>EAT<br>REPEAT</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, a praesentium ex odit distinctio libero esse aut facilis corporis perferendis?</p>
+          
+          <button class="common-btn"><a href="#services">Explore</a></button>
+        </div>
+
+        <!-- --Side Navigation Menu-- -->
+      <nav id="sidenav">
+            <ul class="navlinks">
+                <li><a href="#">Home</a</li>
+                <li><a href="#services">Services</a</li>
+                <li><a href="#work">Our Work</a</li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img src="Imgs/menu.png" alt="" id="menubtn">
+    </section>
+
+              <!-- ---Services--- -->
+    <section id="services">
+      <h1>Services.</h1>
+      <div class="services-row">
+        <div class="services-col">
+          <img src="Imgs/pic-1.png" alt="pic">
+          <h3>SEO & Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quaerat.</p>
+        </div>
+        <div class="services-col">
+          <img src="Imgs/pic-2.png" alt="pic">
+          <h3>Porfolio Websites</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, voluptate?</p>
+        </div>
+        <div class="services-col">
+          <img src="Imgs/pic-3.png" alt="pic">
+          <h3>E-commerce Websites</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, voluptate?</p>
+        </div>
+      </div>
+    </section>
+
+      <!-- ---Work--- -->
+    <section id="work">
+      <div class="work-row">
+        <div class="work-left-col">
+          <h1>Our Work</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum placeat animi. Impedit, <br>quia recusandae nobis voluptate cum fuga quidem, modi reiciendis similique hic optio et <br>repudiandae necessitatibus aliquid inventore.</p>
+        </div>
+        <div class="work-right-col">
+          <img src="Imgs/course.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-row">
+        <div class="contact-left-col">
+          <form action="noaction.php">
+            <input type="text" name="name" id="name" placeholder="Your Name">
+            <input type="email" name="email" id="email" placeholder="Your Email Address">
+            <input type="password" name="pass" id="pass" placeholder="Your Passowrd">
+            <div class="btn-box">
+              <button class="common-btn">Sign Up</button>
+              <button class="common-btn">Contact Us</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-right-col">
+          <img src="Imgs/contact.png" alt="contact">
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      var menubtn = document.getElementById("menubtn");
+      var sidenav = document.getElementById("sidenav");
+      sidenav.style.right = "-250px";
+      menubtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+          sidenav.style.right = "0";
+        }
+        else
+        {
+          sidenav.style.right = "-250px";
+        }
+      }
+    </script>
+  </body>
+</html>
